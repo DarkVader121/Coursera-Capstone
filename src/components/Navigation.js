@@ -1,29 +1,68 @@
 import {Routes, Route,Link } from "react-router-dom";
 import Home from '../pages/Home';
 import About from '../pages/About';
-import Contact from '../pages/Contact';
+import Menu from '../pages/Menu';
+import Reservation from "../pages/Reservation";
+import OrderOnline from "../pages/OrderOnline";
+import Login from "../pages/Login";
+import LittleLemonLogo from "../Image Assets/Logo.svg";
+
+const listStyle = {
+  fontFamily: 'Karla, sans-serif', 
+  textDecoration: 'none', 
+  color: '#333', 
+  marginRight: '25px', 
+  marginLeft: '25px', 
+  fontWeight: 'bold',
+}
 
 function Navigation() {
     return (
-      <div className="navigation" style={{ display: 'flex', justifyContent: 'center' }}>
-        <nav>
-          <ul className="navigation__list" style={{ display: 'flex', listStyle: 'none', padding: 0 }}>
-            <li style={{ marginRight: '10px' }}>
-              <Link to="/">Home</Link>
-            </li>
-            <li style={{ marginRight: '10px' }}>
-              <Link to="/about">About</Link>
-            </li>
-            <li style={{ marginRight: 0 }}>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
+      <div className="Container">
+
+        <nav className="nav-container" style={{display: 'flex', justifyContent: 'center', alignItems:'center'}} >
+          <img src={LittleLemonLogo} alt="Little Lemon Logo"/>
+            <ul className="nav-list" style={{listStyle:'none', display: 'flex',   marginTop: '20px', marginBottom: '20px', }}>
+              <li>
+                <Link to="/" className="nav-link" style={listStyle}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="nav-link" style={listStyle}>
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/menu" className="nav-link" style={listStyle}>
+                  Menu
+                </Link>
+              </li>
+              <li>
+                <Link to="/reservation" className="nav-link" style={listStyle}>
+                  Reservation
+                </Link>
+              </li>
+              <li>
+                <Link to="/orderOnline" className="nav-link" style={listStyle}>
+                  Order Online
+                </Link>
+              </li>
+              <li>
+                <Link to="/login" className="nav-link" style={listStyle}>
+                  Log-in
+                </Link>
+              </li>
+            </ul>
         </nav>
-  
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/reservation" element={<Reservation />} />
+          <Route path="/orderOnline" element={<OrderOnline/>} />
+          <Route path="/login" element={<Login/>} />
         </Routes>
       </div>
     );
