@@ -18,8 +18,7 @@ const listStyle = {
 
 function Navigation() {
     return (
-      <div className="Container">
-
+      <div className="Container" >
         <nav className="nav-container" style={{display: 'flex', justifyContent: 'center', alignItems:'center'}} >
           <img src={LittleLemonLogo} alt="Little Lemon Logo"/>
             <ul className="nav-list" style={{listStyle:'none', display: 'flex',   marginTop: '20px', marginBottom: '20px', }}>

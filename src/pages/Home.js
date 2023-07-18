@@ -1,6 +1,7 @@
 import RestaurantImage from "../Image Assets/restaurantfood.jpg"
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Specials from "../components/Specials";
+import Footer from "../components/Footer";
 const buttonStyle = {
     padding: '10px 20px',
     fontsize: '16px', 
@@ -15,13 +16,14 @@ const buttonStyle = {
     ':hover': {
         backgroundColor:'#45a049'
     }
-    
 };
+
+
 
 function Home () {
     return ( 
     <>
-        <div style={{marginBottom:'200px', maxWidth:'90%',marginRight:'5%', paddingLeft:'23%', paddingRight:'23%', marginLeft:'5%', height:'300px', background:'#4c5e57',  display:'flex', justifyContent:'space-between' }} >
+        <div style={{marginBottom:'200px', maxWidth:'90%',marginRight:'5%',  paddingLeft:'23%', paddingRight:'23%', marginLeft:'5%', height:'300px', background:'#4c5e57',  display:'flex', justifyContent:'space-between' }} >
             <div style={{marginTop:'10px'}}> 
                 <h1 style={{color:'#f0cc00', marginBottom:'5px',  fontFamily: 'Karla, sans-serif'}}>Little Lemon</h1>
                 <h3 style={{color:'#EDEFEE', marginTop:'5px', fontFamily: 'Karla, sans-serif'}}>Chicago</h3>
@@ -37,19 +39,12 @@ function Home () {
             <h1>This Week Specials! </h1>
             <button style={buttonStyle}> Online Menu</button>
         </div>
-        <div className="container" style={{paddingRight:'28%', paddingLeft:'28%', justifyContent:'space-between'}}>
+        <div className="container" style={{ paddingBottom: '5%', paddingRight:'10%', paddingLeft:'10%'}}>
             <div className="row">
-                <div className="col-md-4"> 
-                    <div className="card">Card 1 </div>
-                </div>
-                <div className="col-md-4"> 
-                    <div className="card">Card 1 </div>
-                </div>
-                <div className="col-md-4"> 
-                    <div className="card">Card 1 </div>
-                </div>
+                <Specials/> 
             </div> 
         </div>
+        <Footer/>
      </>
     )
 }
