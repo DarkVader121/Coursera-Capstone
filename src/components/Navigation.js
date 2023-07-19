@@ -7,6 +7,7 @@ import OrderOnline from "../pages/OrderOnline";
 import Login from "../pages/Login";
 import LittleLemonLogo from "../Image Assets/Logo.svg";
 
+
 const listStyle = {
   fontFamily: 'Karla, sans-serif', 
   textDecoration: 'none', 
@@ -14,16 +15,17 @@ const listStyle = {
   marginRight: '25px', 
   marginLeft: '25px', 
   fontWeight: 'bold',
+  backgroundColor: 'transparent',
 }
-
 function Navigation() {
+
     return (
       <div className="Container" >
         <nav className="nav-container" style={{display: 'flex', justifyContent: 'center', alignItems:'center'}} >
           <img src={LittleLemonLogo} alt="Little Lemon Logo"/>
             <ul className="nav-list" style={{listStyle:'none', display: 'flex',   marginTop: '20px', marginBottom: '20px', }}>
               <li>
-                <Link to="/" className="nav-link" style={listStyle}>
+                <Link to="/" className="nav-link"  style={listStyle}>
                   Home
                 </Link>
               </li>

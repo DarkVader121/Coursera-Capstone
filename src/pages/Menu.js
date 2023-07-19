@@ -1,6 +1,17 @@
+const menuStyle = {
+    display: 'flex',
+    justifyContent: 'center', 
+    alignItems: 'center',
+    backgroundColor:"yellow",
+}
+
 function Menu () {
     return(
-        <p>This is Menu Page</p>
+        <di style={menuStyle}> 
+            <h1>
+                Menu Page
+            </h1>
+        </di>
     )
 }
 

@@ -11,7 +11,6 @@ function App() {
         <meta name="og:description" content="This is the Little Lemon Restaurant" />
         <meta name="ig:image" content="" />
       </Helmet>
-      
       <Navigation/>
     </div>
   );

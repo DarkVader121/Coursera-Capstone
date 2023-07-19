@@ -1,6 +1,15 @@
+const LoginStyle = { 
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "yellow",
+}
 function Login () {
     return(
-        <p>This is Login Page</p>
+        <div style={LoginStyle}>
+            <h1>Log-in Page</h1>
+        </div>
+       
     )
 }
 

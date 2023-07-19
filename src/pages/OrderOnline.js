@@ -1,6 +1,16 @@
+const OrderOnlineDesign = { 
+    display:"flex",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor:"yellow",
+}
+
 function OrderOnline () {
     return(
-        <p>This is order online page</p>
+        <div style={OrderOnlineDesign}> 
+            <h1>Order Online</h1>
+        </div>
+        
     )
 }
 

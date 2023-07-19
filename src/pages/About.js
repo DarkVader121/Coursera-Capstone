@@ -1,6 +1,16 @@
+const aboutStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  backgroundColor: 'yellow',
+}
+
 function About (){
+
     return(
-        <p>This is About Page</p>
+        <div style={aboutStyle}> 
+            <h1>About Page</h1>
+        </div>
     )
 }
 
