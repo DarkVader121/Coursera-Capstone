@@ -9,8 +9,8 @@ const textStyle = {
 }
 function Footer() {
     return(
-        <div style={{maxWidth:"90%", marginRight:"5%", marginLeft:"5%", backgroundColor:"#edefee",  padding:"20px", display: "flex", gap:'5%', alignItems:'center' }}>
-            <img src={footerLogo} alt="FooterLogo" height="80px" width="200px"/>
+        <div style={{ backgroundColor:"#edefee",marginTop:"20px",  padding:"20px", display: "flex", gap:'5%', alignItems:'center' }}>
+            <img src={footerLogo} alt="FooterLogo" height="50px" width="200px"/>
             <p style={textStyle}>Thank you for visiting Little Lemon! We appreciate your support and interest in our content. 
             All rights are reserved by Little Lemon for the year 2023. We strive to provide you with delightful experiences and 
             look forward to continuing to bring you the best of our offerings. Stay tuned for more exciting updates and remember, 

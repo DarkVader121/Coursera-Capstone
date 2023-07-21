@@ -1,3 +1,5 @@
+import Footer from "../components/Footer";
+
 const menuStyle = {
     display: 'flex',
     justifyContent: 'center', 
@@ -7,11 +9,14 @@ const menuStyle = {
 
 function Menu () {
     return(
-        <di style={menuStyle}> 
+        <>
+        <div style={menuStyle}> 
             <h1>
                 Menu Page
             </h1>
-        </di>
+        </div>
+        <Footer/>
+        </>
     )
 }
 

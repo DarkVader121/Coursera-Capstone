@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 const aboutStyle = {
   display: 'flex',
   justifyContent: 'center',
@@ -8,9 +9,12 @@ const aboutStyle = {
 function About (){
 
     return(
+        <>
         <div style={aboutStyle}> 
             <h1>About Page</h1>
         </div>
+        <Footer/>
+        </>
     )
 }
 
